@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tuscany</title>
+        <link type="text/css" rel="stylesheet" href="x04_Tuscany.css"/>
+    </head>
+    <body>
+        <h1>A Taste of Tuscany</h1>
+        <h2>Italian Restaurant</h2>
+        <h3><br/>
+            234 Arezzo Avenue<br/>
+            Sherwood Park
+        </h3>
+        <div>
+        <article>
+        <p><img src="https://images.unsplash.com/photo-1713561058969-793049b01712?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Spaghetti" width="294" height="196"/><br/>
+        Link: <a href="https://unsplash.com/photos/a-plate-of-spaghetti-with-tomato-sauce-and-parsley-Htb3Neu9Tmg">Photo Source</a></p>
+        <ul>
+            <li>Fine Italian dining</li>
+            <li><div class="popup" onmouseover="myFunction()" onmouseleave="myfunction2()">Daily Specials<span class="popuptext" id="myPopup"> 
+                <i><b>Today's Special</b></i>
+                <i>Valigette (Beef Rolls)</i>
+                $12.95
+            Includes any <i>two</i> of:<br/>
+                Pasta e Fagoli
+                Ravioli Nudi
+                Fettunta
+                Crostini con Salsiccia
+                Ribollita
+            </span></div> </li>
+            <li>Licensed</li>
+            <li>Banquet Room</li>
+            <li>Open Daily Until 11 p.m.</li>
+            <li>Eat In, Take Out, Delivery</li>
+            <li>Call 780-555-1234</li>
+        </ul>
+        </article>
+        </div>
+        
+       
+        <script>
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            function myfunction2() {
+                popup.classList.toggle("hide");
+            }
+            </script>
+    </body>
+   
+</html>
