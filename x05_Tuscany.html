@@ -4,6 +4,62 @@
         <meta charset="UTF-8"/>
         <title>Tuscany</title>
         <link type="text/css" rel="stylesheet" href="https://parz1valmc.github.io/x05_Tuscany.css"/>
+        <style>
+        
+ul {
+    text-align: center;
+}
+ol {
+    text-align: center;
+}
+body {
+    text-align: center;
+    
+}
+
+div {
+    width: 50%;
+    text-align: center;
+    border: 2px solid blue;
+    color: green;
+    margin: auto;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+.popup .popuptext {
+    visibility: hidden;
+  width: 160px;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.popup .show {
+    visibility: visible;
+    
+}
+
+.popup .hide {
+    visibility: hidden;
+}    
+        </style>
     </head>
     <body>
         <h1>A Taste of Tuscany</h1>
@@ -19,7 +75,7 @@
         Link: <a href="https://unsplash.com/photos/a-plate-of-spaghetti-with-tomato-sauce-and-parsley-Htb3Neu9Tmg">Photo Source</a></p>
         <ul>
             <li>Fine Italian dining</li>
-            <li><div class="popup" onmouseover="myFunction()" onmouseleave="myfunction2()">Daily Specials<span class="popuptext" id="myPopup"> 
+            <li><div class="popup" onmouseover="myFunction()" onclick="myfunction2()">Daily Specials<span class="popuptext" id="myPopup"> 
                 <i><b>Today's Special</b></i>
                 <i>Valigette (Beef Rolls)</i>
                 $12.95
